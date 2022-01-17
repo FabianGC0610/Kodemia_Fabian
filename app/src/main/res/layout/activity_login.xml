@@ -92,7 +92,8 @@
                 android:text="@string/textSigin"
                 android:gravity="center"
                 android:textStyle="bold"
-                android:textColor="@color/blue_900">
+                android:textColor="@color/blue_900"
+                android:clickable="true">
 
             </TextView>
 

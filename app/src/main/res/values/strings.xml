@@ -5,4 +5,9 @@
     <string name="textPass">Contraseña</string>
     <string name="buttonLogin">INICIAR SESION</string>
     <string name="textSigin">¿Todavía no tienes cuenta? Regístrate</string>
+    <string name="textUsuario">Usuario</string>
+    <string name="textConfirmPass">Confirmar Contraseña</string>
+    <string name="buttonSigin">CREAR CUENTA</string>
+    <string name="textReturn">&lt;Regresar</string>
+    <string name="shorttextSigin">Estas a unos cuantos pasos de vivir la mejor experiencia</string>
 </resources>
