@@ -16,7 +16,7 @@
 
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/textReturnFromSigin"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -43,7 +43,7 @@
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                app:layout_constraintTop_toBottomOf="@+id/textReturnFromSigin" />
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/materialCardView"
@@ -62,22 +62,36 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/titleCarViewSigin"
+                        android:textColor="@color/blue_900"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/tilUsuario"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="16dp"
+                        android:layout_marginTop="16dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
+                        app:layout_constraintTop_toBottomOf="@+id/textView4">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/tietUsuario"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/textUsuario"
-                            android:inputType="textEmailAddress" />
+                            android:inputType="text"/>
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -85,6 +99,7 @@
                         android:id="@+id/tilCorreoSigin"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_marginHorizontal="16dp"
                         android:layout_marginTop="24dp"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -104,6 +119,7 @@
                         android:id="@+id/tilPasswordSigin"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_marginHorizontal="16dp"
                         android:layout_marginTop="24dp"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -124,6 +140,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="16dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_marginTop="24dp"
                         android:layout_marginBottom="64dp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -145,13 +162,14 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/button"
+                android:id="@+id/bilSigin"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
+                android:layout_marginTop="32dp"
                 android:layout_marginEnd="30dp"
-                app:cornerRadius="12dp"
                 android:text="@string/buttonSigin"
+                app:cornerRadius="12dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
