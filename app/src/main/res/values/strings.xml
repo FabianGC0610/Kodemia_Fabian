@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Bookodemia</string>
+    <string name="bienvenida_login">¡Bienvenido!</string>
+    <string name="textCorreo">Correo</string>
+    <string name="textPass">Contraseña</string>
+    <string name="buttonLogin">INICIAR SESION</string>
+    <string name="textSigin">¿Todavía no tienes cuenta? Regístrate</string>
+</resources>
