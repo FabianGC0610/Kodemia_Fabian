@@ -1,9 +1,11 @@
 package mx.kodemia.bookodemia.adapters
 
+import android.text.TextUtils.replace
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.card.MaterialCardView
 import com.google.android.material.snackbar.Snackbar
@@ -25,6 +27,7 @@ class RecyclerViewHome (val home: MutableList<DataClassHome>): RecyclerView.Adap
 
             cardView.setOnClickListener {
                 Snackbar.make(view, "Acceso a ${home.tituloLibro}",Snackbar.LENGTH_SHORT).show()
+
             }
         }
     }
@@ -39,5 +42,4 @@ class RecyclerViewHome (val home: MutableList<DataClassHome>): RecyclerView.Adap
     }
 
     override fun getItemCount(): Int = home.size
-
 }

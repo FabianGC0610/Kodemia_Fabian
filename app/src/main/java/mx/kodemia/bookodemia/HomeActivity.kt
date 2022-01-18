@@ -1,9 +1,13 @@
 package mx.kodemia.bookodemia
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import com.google.android.material.card.MaterialCardView
 import kotlinx.android.synthetic.main.activity_home.*
+import kotlinx.android.synthetic.main.fragment_details.*
+import kotlinx.android.synthetic.main.item_cardview_home.*
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,6 +17,7 @@ class HomeActivity : AppCompatActivity() {
         val listFragment = ListFragment()
         val homeFragment = HomeFragment()
         val userFragment = UserFragment()
+        val detailsFragment = DetailsFragment()
 
         bottomNavigationView.setOnItemSelectedListener {
             when(it.itemId){
@@ -25,13 +30,22 @@ class HomeActivity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_user -> {
-                    setCurrentFragment(userFragment)
+                    setCurrentFragment(detailsFragment)
                     true
                 }
                 else -> false
             }
         }
 
+        /*
+        cardView_item_home.setOnClickListener {
+            setCurrentFragment(detailsFragment)
+        }
+
+        text_return.setOnClickListener{
+            setCurrentFragment(homeFragment)
+        }
+        */
     }
 
     private fun setCurrentFragment(fragment: Fragment){
