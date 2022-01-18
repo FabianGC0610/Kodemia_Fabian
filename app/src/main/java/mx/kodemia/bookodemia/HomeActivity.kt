@@ -9,7 +9,6 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.google.android.material.card.MaterialCardView
 import kotlinx.android.synthetic.main.activity_home.*
-import kotlinx.android.synthetic.main.fragment_details.*
 import kotlinx.android.synthetic.main.item_cardview_home.*
 
 class HomeActivity : AppCompatActivity() {
@@ -20,7 +19,6 @@ class HomeActivity : AppCompatActivity() {
         val listFragment = ListFragment()
         val homeFragment = HomeFragment()
         val userFragment = UserFragment()
-        val detailsFragment = DetailsFragment()
 
         bottomNavigationView.setOnItemSelectedListener {
             when (it.itemId) {

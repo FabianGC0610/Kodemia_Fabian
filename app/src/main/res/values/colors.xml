@@ -70,4 +70,8 @@
     <color name="light_blue_A400">#00B0FF</color>
     <color name="light_blue_A700">#0091EA</color>
 
+    <color name="blue_book">#0D2873</color>
+    <color name="blue_book_sky">#0F96F8</color>
+    <color name="gray_book">#DBDBDB</color>
+
 </resources>
