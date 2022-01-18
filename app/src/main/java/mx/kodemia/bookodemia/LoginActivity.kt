@@ -12,6 +12,24 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        tietPassword.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+            }
+
+            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+            }
+
+            override fun afterTextChanged(editPass: Editable?) {
+                if(editPass.toString().trim().isEmpty()){
+                    tilPassword.setError("Contraseña requerida")
+                }else{
+                    tilPassword.setErrorEnabled(false)
+                    tilPassword.setError("")
+                }
+            }
+
+        })
+
         tietCorreo.addTextChangedListener(object: TextWatcher{
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
             }
