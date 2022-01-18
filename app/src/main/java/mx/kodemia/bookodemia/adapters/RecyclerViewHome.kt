@@ -1,18 +1,21 @@
 package mx.kodemia.bookodemia.adapters
 
-import android.text.TextUtils.replace
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.card.MaterialCardView
 import com.google.android.material.snackbar.Snackbar
+import mx.kodemia.bookodemia.DetailsActivity
+import mx.kodemia.bookodemia.DetailsFragment
+import mx.kodemia.bookodemia.HomeActivity
 import mx.kodemia.bookodemia.R
 import mx.kodemia.bookodemia.model.DataClassHome
 
-class RecyclerViewHome (val home: MutableList<DataClassHome>): RecyclerView.Adapter<RecyclerViewHome.HomeHolder>() {
+class RecyclerViewHome ( val home: MutableList<DataClassHome>): RecyclerView.Adapter<RecyclerViewHome.HomeHolder>() {
 
     class HomeHolder (val view: View) : RecyclerView.ViewHolder(view){
         val cardView: MaterialCardView = view.findViewById(R.id.cardView_item_home)
@@ -27,7 +30,6 @@ class RecyclerViewHome (val home: MutableList<DataClassHome>): RecyclerView.Adap
 
             cardView.setOnClickListener {
                 Snackbar.make(view, "Acceso a ${home.tituloLibro}",Snackbar.LENGTH_SHORT).show()
-
             }
         }
     }

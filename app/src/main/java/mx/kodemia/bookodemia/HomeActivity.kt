@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import com.google.android.material.card.MaterialCardView
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.fragment_details.*
@@ -20,7 +21,7 @@ class HomeActivity : AppCompatActivity() {
         val detailsFragment = DetailsFragment()
 
         bottomNavigationView.setOnItemSelectedListener {
-            when(it.itemId){
+            when (it.itemId) {
                 R.id.nav_list -> {
                     setCurrentFragment(listFragment)
                     true
@@ -30,29 +31,18 @@ class HomeActivity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_user -> {
-                    setCurrentFragment(detailsFragment)
+                    setCurrentFragment(userFragment)
                     true
                 }
                 else -> false
             }
         }
-
-        /*
-        cardView_item_home.setOnClickListener {
-            setCurrentFragment(detailsFragment)
-        }
-
-        text_return.setOnClickListener{
-            setCurrentFragment(homeFragment)
-        }
-        */
     }
 
-    private fun setCurrentFragment(fragment: Fragment){
+    fun setCurrentFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction().apply {
-            replace(R.id.ContainerView,fragment)
+            replace(R.id.ContainerView, fragment)
             commit()
         }
     }
-
 }
