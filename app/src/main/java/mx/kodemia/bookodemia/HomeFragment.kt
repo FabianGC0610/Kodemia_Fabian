@@ -15,7 +15,7 @@ import mx.kodemia.bookodemia.model.DataClassHome
 class HomeFragment : Fragment(R.layout.fragment_home) {
 
     val listLibros: MutableList<DataClassHome> = mutableListOf()
-    var adapterHome = RecyclerViewHome(listLibros)
+    var adapterHome = activity?.let { RecyclerViewHome(listLibros, requireActivity()) }
     var parent_view: View? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,7 +45,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
         recyclerView_Home.layoutManager = LinearLayoutManager(activity)
         recyclerView_Home.setHasFixedSize(true)
-        adapterHome = RecyclerViewHome(listLibros)
+        adapterHome = activity?.let { RecyclerViewHome(listLibros, requireActivity()) }
         recyclerView_Home.adapter = adapterHome
     }
 
