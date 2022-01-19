@@ -31,10 +31,10 @@
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_gravity="center"
-                android:layout_width="124dp"
-                android:layout_height="124dp"
+                android:layout_width="135dp"
+                android:layout_height="130dp"
                 android:layout_marginTop="128dp"
-                android:src="@drawable/ic_baseline_menu_book_24"
+                android:src="@drawable/ic_book_login"
 
                 />
 
