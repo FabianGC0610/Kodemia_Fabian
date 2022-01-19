@@ -22,7 +22,7 @@
     <string name="autor_libro">by Autor</string>
     <string name="categoria_libro">Categoría</string>
     <string name="book_mockup">Book Mockup</string>
-    <string name="lorem_Ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s</string>
+    <string name="lorem_Ipsum">Esta es una descripción, is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s</string>
     <string name="description">Descripción</string>
     <string name="detalles">Detalles</string>
     <string name="autor_about">Sobre el Autor</string>
