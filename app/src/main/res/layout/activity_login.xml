@@ -42,7 +42,7 @@
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="22dp"
                 android:text="@string/bienvenida_login"
                 android:textColor="@color/blue_book"
                 android:textSize="36sp"
