@@ -27,6 +27,21 @@
     <string name="detalles">Detalles</string>
     <string name="autor_about">Sobre el Autor</string>
     <string name="autor_name">Nombre del autor</string>
+    <string name="error">Error</string>
+    <string name="listado">Listado de libros</string>
+    <string name="terror">Terror</string>
+    <string name="comedia">Comedia</string>
+    <string name="histórico">Histórico</string>
+    <string name="cuento">Cuento</string>
+    <string name="textCom">Descripción de los libros de Comedia. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</string>
+    <string name="texthis">Descripción de los libros de Historia. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</string>
+    <string name="textTer">Descripción de los libros de Terror. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old</string>
+    <string name="textCue">Descripción de los libros de Cuentos. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33</string>
+    <string name="holaFabian">Hola, soy Fabián</string>
+    <string name="unirse">Se unió en octubre de 2020</string>
+    <string name="encanta">Te encanta la Comedia y el Terror!!!</string>
+    <string name="librosgustados">Estos son los libros que te encantaron</string>
+    <string name="librospendientes">Estos son los libros que te faltan por leer</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

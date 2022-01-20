@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.widget.Toast
+import com.google.android.material.textfield.TextInputLayout
 import kotlinx.android.synthetic.main.activity_sigin.*
 
 class SiginActivity : AppCompatActivity() {

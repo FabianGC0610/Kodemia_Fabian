@@ -38,7 +38,7 @@
         android:layout_marginStart="24dp"
         android:text="@string/userName"
         android:textColor="@color/blue_book"
-        android:textSize="32dp"
+        android:textSize="32sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textSaludo" />

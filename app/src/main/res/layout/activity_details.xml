@@ -42,7 +42,7 @@
             <View
                 android:id="@+id/divider6"
                 android:layout_width="0dp"
-                android:layout_height="5dp"
+                android:layout_height="3dp"
                 android:layout_marginStart="56dp"
                 android:layout_marginTop="82dp"
                 android:backgroundTintMode="screen"
