@@ -26,7 +26,7 @@ class DetailsActivity : AppCompatActivity() {
         val alter_text: TextView = findViewById(R.id.textView12)
 
         text_button_des.setOnClickListener {
-            alter_text.setText("Esta es una descripción, is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s")
+            alter_text.setText("Esta es una descripción, is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s")
         }
 
         text_button_det.setOnClickListener {
