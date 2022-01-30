@@ -10,12 +10,18 @@
     <string name="api_login">login</string>
     <string name="api_libros">books</string>
     <string name="api_registro">register</string>
+    <string name="api_logout">logout</string>
 
     <!--Errores-->
     <string name="error_internet">No tienes internet Karnal</string>
     <string name="campo_vacio">Campo vacio</string>
     <string name="error_correo">Correo no valido</string>
     <string name="error_422">Este correo ya esta utilizado</string>
+
+    <!--Cambios de string-->
+    <string name="Mockupchange">%s</string>
+    <string name="Autorchange">%s</string>
+    <string name="Categoriachange">%s</string>
 
     <string name="app_name">Bookodemia</string>
     <string name="bienvenida_login">¡Bienvenido!</string>
@@ -62,4 +68,5 @@
     <string name="librospendientes">Estos son los libros que te faltan por leer</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cerrar_sesion">Cerrar Sesión</string>
 </resources>
