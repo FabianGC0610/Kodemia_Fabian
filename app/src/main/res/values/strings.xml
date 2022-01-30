@@ -15,6 +15,7 @@
     <string name="error_internet">No tienes internet Karnal</string>
     <string name="campo_vacio">Campo vacio</string>
     <string name="error_correo">Correo no valido</string>
+    <string name="error_422">Este correo ya esta utilizado</string>
 
     <string name="app_name">Bookodemia</string>
     <string name="bienvenida_login">¡Bienvenido!</string>
