@@ -46,7 +46,9 @@
     <string name="autor_libro">by Autor</string>
     <string name="categoria_libro">Categoría</string>
     <string name="book_mockup">Book Mockup</string>
-    <string name="lorem_Ipsum">Esta es una descripción, is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s</string>
+    <string name="lorem_Ipsum">When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</string>
+    <string name="lorem_Ipsum_Det">Estos son los detalles, ID del libro: %s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</string>
+    <string name="lorem_Ipsum_Des">%s. Esta es una descripción, is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s</string>
     <string name="description">Descripción</string>
     <string name="detalles">Detalles</string>
     <string name="autor_about">Sobre el Autor</string>
@@ -69,4 +71,8 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="cerrar_sesion">Cerrar Sesión</string>
+    <string name="tv_confi">Configuración</string>
+    <string name="tv_ayuda">Obten ayuda</string>
+    <string name="btn_volver_leer">Volver a leer</string>
+    <string name="btn_seguir_leyendo">Seguir leyendo</string>
 </resources>

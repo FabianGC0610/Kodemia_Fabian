@@ -24,6 +24,7 @@ import mx.kodemia.bookodemia.extra.mensajeEmergente
 import mx.kodemia.bookodemia.extra.obtenerkDeSesion
 import mx.kodemia.bookodemia.model.DataClassHome
 import mx.kodemia.bookodemia.model.Errors
+import mx.kodemia.bookodemia.modelAuthors.DataFirstAuthor
 import mx.kodemia.bookodemia.modelBooks.Data
 import org.json.JSONObject
 
@@ -87,11 +88,13 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                     recyclerView_Home.visibility = View.VISIBLE
                 },{
                         error ->
-                    if(error.networkResponse.statusCode == 401){
+                    if(error.networkResponse.statusCode == 401) {
                         eliminarSesion(requireActivity())
-                        val intent = Intent(requireActivity(),LoginActivity::class.java)
+                        val intent = Intent(requireActivity(), LoginActivity::class.java)
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
                         startActivity(intent)
+                    }else if(error.networkResponse.statusCode == 429){
+                        realizarPeticion()
                     }else{
                         val json = JSONObject(String(error.networkResponse.data, Charsets.UTF_8))
                         //val errors = Json.decodeFromString<Errors>(json.toString())
@@ -117,5 +120,4 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             mensajeEmergente(requireActivity(),getString(R.string.error_internet))
         }
     }
-
 }

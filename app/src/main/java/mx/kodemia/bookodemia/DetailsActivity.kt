@@ -18,7 +18,12 @@ class DetailsActivity : AppCompatActivity() {
         intent.extras?.let{
             val book = it.getSerializable("book") as datosLibro
             text_mockup.text = getString(R.string.Mockupchange,book.attributes.title)
+            textView12.text = getString(R.string.lorem_Ipsum_Des,book.attributes.content)
             Log.d(TAG,book.attributes.title)
+            val author = it.getString("author")
+            text_autor_details.text = getString(R.string.Autorchange,author)
+            val category = it.getString("category")
+            text_category_details.text = getString(R.string.Categoriachange,category)
         }
 
         val button_favorite: ImageButton = findViewById(R.id.imageButton7)
@@ -35,11 +40,17 @@ class DetailsActivity : AppCompatActivity() {
         val alter_text: TextView = findViewById(R.id.textView12)
 
         text_button_des.setOnClickListener {
-            alter_text.setText("Esta es una descripción, is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s")
+            intent.extras?.let{
+                val book = it.getSerializable("book") as datosLibro
+                alter_text.text = getString(R.string.lorem_Ipsum_Des,book.attributes.content)
+            }
         }
 
         text_button_det.setOnClickListener {
-            alter_text.setText("Estos son los detalles, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum")
+            intent.extras?.let{
+                val book = it.getSerializable("book") as datosLibro
+                alter_text.text = getString(R.string.lorem_Ipsum_Det,book.id)
+            }
         }
 
     }
