@@ -25,10 +25,10 @@ import org.json.JSONObject
 class LoginActivity : AppCompatActivity() {
 
     private val TAG = LoginActivity::class.qualifiedName
-    private val name_device: String = android.os.Build.MANUFACTURER
+    private val name_device: String = android.os.Build.DEVICE
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        eliminarSesion(applicationContext)
+        //eliminarSesion(applicationContext)
         if(validarSesion(applicationContext)){
             lanzarActivity()
         }

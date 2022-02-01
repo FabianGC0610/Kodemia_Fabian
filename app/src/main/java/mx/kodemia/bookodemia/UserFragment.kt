@@ -43,6 +43,7 @@ class UserFragment : Fragment(R.layout.fragment_user) {
                 Log.d(TAG, "Todo salio bien")
                 eliminarSesion(requireActivity())
                 startActivity(Intent(requireActivity(),LoginActivity::class.java))
+                Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                 requireActivity().finish()
             },{
                     error ->

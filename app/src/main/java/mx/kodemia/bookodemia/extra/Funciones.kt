@@ -28,6 +28,7 @@ fun iniciarSesion(context: Context, jsonObject: JSONObject){
     val sharePreferences = obtenerPreferencias(context)
     with(sharePreferences.edit()){
         putString("token",jsonObject.getString(context.getString(R.string.key_token)))
+        //putString("token",jsonObject[context.getString(R.string.key_token)].toString())
         // Se puede tambien asi jsonObject[context.getString(R.string.key_token)].toString()
         apply()
     }
